@@ -82,7 +82,7 @@ for (const btn of buttons) {
         container.appendChild(p);
         
         if(taskUpdate === 0 ){
-            alert(`comopleted all task at ${time}`)
+            alert(`completed all task at ${time}`)
         }
         
     })

@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <header class="w-9/12 mx-auto">
+    <header class="w-9/12 mx-auto py-8">
         <nav>
             <div class=" px-10  py-5 bg-base-100 shadow-sm">
   <div class="flex items-center justify-between">
@@ -39,49 +39,52 @@
     </header>
 
     <main class="w-9/12 mx-auto py-10">
+      <section class="text-white text-2xl">
       <!-- q1 -->
-      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+      <div class="collapse collapse-arrow bg-gray-400 border border-base-300">
   <input type="radio" name="my-accordion-2" checked="checked" />
   <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
-  <div class="collapse-content text-sm border-t border-dotted">There are five ways to select an element in the DOM . 
-    <p>1. document.getElementById</p>
-    <p>2. document.getElementByTagName</p>
-    <p>3. document.getElementByClassName</p>
-    <p>4. document.querySelector</p>
-    <p>5. document.querySelectorAll</p>
+  <div class="collapse-content text-xl border-t border-dotted ">There are five ways to select an element in the DOM . 
+    <p>1. document.getElementById. <span class="text-sky-200 text-lg">Selects one element, Returns a single element, </span ></p>
+    <p>2. document.getElementByTagName. <span  class="text-sky-200 text-lg">Selects all elements with the given tag, Returns a live HTMLCollection</span></p>
+    <p>3. document.getElementByClassName. <span class="text-sky-200 text-lg">Selects multiple elements, Returns a live HTMLCollection, Access elements by index</span></p>
+    <p>4. document.querySelector <span class="text-sky-200 text-lg">Selects the first matching element , Accepts any valid CSS selector. And give the first element from selector </span></p>
+    <p>5. document.querySelectorAll <span class="text-sky-200 text-lg">Selects all matching elements , Returns a static NodeList , We can use forEach loop on querySelectorAll </span></p>
   </div>
 </div>
 <!-- q2 -->
-<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+<div class="collapse collapse-arrow bg-gray-400 border border-base-300">
   <input type="radio" name="my-accordion-2" />
   <div class="collapse-title font-semibold ">What is the difference between innerHTML, innerText, and textContent ?</div>
-  <div class="collapse-content text-sm"><p>.innerHTML : Return element with 'html' tag</p>
+  <div class="collapse-content text-xl"><p>.innerHTML : Return element with 'html' tag</p>
     <p>.innerText : Return element's inside text only </p>
-    <p>.innerContext: Return elements text even the text is hidden</p>
+    <p>.innerContext: Return elements text even through text is hidden</p>
   </div>
   
 </div>
 <!-- q3 -->
-<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+<div class="collapse collapse-arrow bg-gray-400 border border-base-300">
   <input type="radio" name="my-accordion-2" />
   <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
-  <div class="collapse-content text-sm">Event delegation is , set event in to the parent element to handle events from it's child elements using event bubbling</div>
+  <div class="collapse-content text-2xl">Event delegation is , set event in to the parent element to handle events from it's child elements using event bubbling</div>
 </div>
 <!-- q4 -->
-<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+<div class="collapse collapse-arrow bg-gray-400 border border-base-300">
   <input type="radio" name="my-accordion-2" />
   <div class="collapse-title font-semibold"> What is event bubbling in the DOM?</div>
-  <div class="collapse-content text-sm">Event bubbling is ,if child element tigger an event and go to parent element then document this process call event bubbling </div>
+  <div class="collapse-content text-2xl">Event bubbling is ,if child element tigger an event and go to parent element then document this process call event bubbling </div>
 </div>
 <!-- q5 -->
-<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+<div class="collapse collapse-arrow bg-gray-400 border border-base-300">
   <input type="radio" name="my-accordion-2" />
   <div class="collapse-title font-semibold">How do you create, add, and remove elements using JavaScript?</div>
-  <div class="collapse-content text-sm"><p>For create elements use document.createElement('n.b.=>elementTagName')</p>
+  <div class="collapse-content text-2xl"><p>For create elements use document.createElement('n.b.=>elementTagName')</p>
   <p>For add elements using parentElement.appendChild('elementName')</p>
   <p>For remove elements using parentElement.removeChild('elementName')</p>
   </div>
 </div>
+      </section>
+
     </main>
     <script src="./script/utilies.js"></script> 
 </body>
